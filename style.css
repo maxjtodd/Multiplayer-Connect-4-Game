@@ -1,0 +1,98 @@
+/* Max Todd */
+/* 3/1/23 */
+
+/* Modified 3/20/23 */
+
+/* Page styling */
+* {
+    background-color: bisque;
+    text-align: center;
+}
+
+
+
+/* Styling for red turn title display */
+.redTurn {
+    color: red;
+}
+
+/* Styling for black turn title display */
+.blackTurn {
+    color: black;
+}
+ 
+
+/* centers all divs */
+.centerContainer {
+    display: flex;
+}
+
+
+/* Styling for dropper container */
+.dropperContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for dropper */
+.dropper {
+    background-color: beige;
+    width: calc(40vw / 7);
+    height: 5vw;
+    font-size: 4vw;
+}
+.dropper:hover {
+    background-color: darkkhaki;
+}
+
+
+/* Styling for tile board*/
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vw;
+    width: 40vw;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Styling for blank tiles */
+.tile {
+    display: block;
+    background-color: floralwhite;
+    width: calc((40vw / 7) - 8px);
+    height: calc((40vw / 6) - 8px) ;
+    border: 4px solid blue;
+}
+
+/* Styling for red tile */
+.redTile {
+    background-color: red;
+    width: calc((40vw / 7) - 8px);
+    height: calc((40vw / 6) - 8px) ;
+    border: 4px solid blue;
+}
+
+/* Styling for black tile */
+.blackTile {
+    background-color: black;
+    width: calc((40vw / 7) - 8px);
+    height: calc((40vw / 6) - 8px) ;
+    border: 4px solid blue;
+}
+
+/* Styling for player connection */
+.connection {
+    display: inline;
+    background: red;
+    color: black;
+}
+
+.redPlayer {
+    color: red;
+}

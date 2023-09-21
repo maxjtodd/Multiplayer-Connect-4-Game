@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!-- Max Todd -->
+<!-- 3/1/23 -->
+
+<!-- Modified 3/20/23 -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Connect 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" text="text/css" href="style.css">
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="game.js"></script>
+    </head>
+
+    <!-- starts the game when the body loads -->
+    <body>
+
+        <!-- Title -->
+        <h1 id="title">Connect 4</h1>
+
+        <div id="game">
+
+            <!-- Restart game -->
+            <!-- <h2 id="restart" ondblclick="restart()">Double click me to restart the game!</h2> -->
+
+            <!-- Display player connection status -->
+            <div class="player redPlayer">
+                Red Player
+                <div class="connected" style="color: black;">
+                    Connected: <span id="redConnected" class="connection">X</span>
+                </div>
+            </div>
+
+            <div class="player blackPlayer">
+                Black Player
+                <div class="connected">
+                    Connected: <span id="blackConnected" class="connection">X</span>
+                </div>
+            </div>
+
+
+            <!-- Displays who's turn it is -->
+            <h2 id="turn" class="redTurn">Red Turn</h2>
+
+
+            <!-- Columns to drop the connect 4 piece into -->
+            <div id="gameBoard" class="dropperContainer">
+
+                <span class="dropper" id="drop0" onclick="drop(0)">↓</span>
+                <span class="dropper" id="drop1" onclick="drop(1)">↓</span>
+                <span class="dropper" id="drop2" onclick="drop(2)">↓</span>
+                <span class="dropper" id="drop3" onclick="drop(3)">↓</span>
+                <span class="dropper" id="drop4" onclick="drop(4)">↓</span>
+                <span class="dropper" id="drop5" onclick="drop(5)">↓</span>
+                <span class="dropper" id="drop6" onclick="drop(6)">↓</span>
+
+            </div>
+
+            
+            <!-- Table to display the connect 4 game -->
+            
+            <div class="board">
+                <!-- Populates board from js, see the body opening tag  -->
+            </div>
+
+        </div>
+
+
+    </body>
+</html>
